@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
@@ -28,41 +29,50 @@ class LoginScreen extends StatelessWidget {
                 fit: BoxFit.cover,
                 alignment: Alignment.center,
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 15.h, bottom: 20.h),
-                child: Text(
-                  "Login",
-                  textAlign: TextAlign.left,
-                  style: AppTextStyle.textStyle24CP.copyWith(
-                    color: AppColor.blackColor,
-                    fontWeight: FontWeight.bold,
+              FadeInLeft(
+                child: Padding(
+                  padding: EdgeInsets.only(left: 15.h, bottom: 20.h),
+                  child: Text(
+                    "Login",
+                    textAlign: TextAlign.left,
+                    style: AppTextStyle.textStyle24CP.copyWith(
+                      color: AppColor.blackColor,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16.h),
-                child: TextFormFieldPhoneWidget(
-                  controller: TextEditingController(),
-                  validator: (value) {},
+              FadeIn(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.h),
+                  child: TextFormFieldPhoneWidget(
+                    controller: TextEditingController(),
+                    validator: (value) {},
+                  ),
                 ),
               ),
               Gap(15.h),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16.h),
-                child: TextFormFieldWidget(
-                  isPassword: true,
-                  obscureText: true,
-                  hintText: "Password...",
-                  controller: TextEditingController(),
-                  validator: (value) {},
+              FadeIn(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.h),
+                  child: TextFormFieldWidget(
+                    isPassword: true,
+                    obscureText: true,
+                    hintText: "Password...",
+                    controller: TextEditingController(),
+                    validator: (value) {},
+                  ),
                 ),
               ),
               Gap(20.h),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16.h),
-                child: MaterialButtonWidget(
-                  onPressed: () {},
-                  text: "Sign In",
+              BounceInDown(
+                from: 10,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.h),
+                  child: MaterialButtonWidget(
+                    onPressed: () {},
+                    text: "Sign In",
+                  ),
                 ),
               ),
               Gap(20.h),
