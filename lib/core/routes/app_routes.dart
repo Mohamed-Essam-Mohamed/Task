@@ -17,7 +17,7 @@ class AppRoutes {
       case LoginScreen.routeName:
         return AnimationRoute(page: const LoginScreen());
       case RegisterScreen.routeName:
-        return AnimationRoute(page: const RegisterScreen());
+        return AnimationRoute(page: RegisterScreen());
 
       default:
         return AnimationRoute(page: const InternetScreen());
