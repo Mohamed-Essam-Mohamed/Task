@@ -10,12 +10,17 @@ import '../../../core/utils/app_text_style.dart';
 
 class TextFormFieldPhoneWidget extends StatelessWidget {
   const TextFormFieldPhoneWidget(
-      {super.key, required this.controller, this.validator});
+      {super.key, required this.controller, this.validator, this.onChanged});
   final TextEditingController controller;
   final FutureOr<String?> Function(PhoneNumber?)? validator;
+  final void Function(PhoneNumber)? onChanged;
   @override
   Widget build(BuildContext context) {
     return IntlPhoneField(
+      // autovalidateMode: AutovalidateMode.always,
+      // disableLengthCheck: true,
+      // disableAutoFillHints: true,
+      onChanged: onChanged,
       initialCountryCode: 'EG',
       controller: controller,
       cursorColor: AppColor.primaryColor,
