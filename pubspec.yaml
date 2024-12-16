@@ -40,7 +40,7 @@ dependencies:
   get_it: ^8.0.3
   equatable: ^2.0.7
   flutter_svg: ^2.0.16
-  google_fonts: ^6.2.1
+  
   animate_do: ^3.3.4
   shared_preferences: ^2.3.3
   dartz: ^0.10.1
@@ -89,10 +89,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: DMSans-VariableFont_opsz,wght
+      fonts:
+        - asset: assets/fonts/DMSans-VariableFont_opsz,wght.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
