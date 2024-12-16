@@ -50,6 +50,7 @@ dependencies:
   gap: ^3.0.1
   flutter_bloc: ^8.1.6
   flutter_native_splash: ^2.4.3
+  intl_phone_field: ^3.2.0
 
 dev_dependencies:
   flutter_test:

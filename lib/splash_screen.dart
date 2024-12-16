@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tasky/core/extensions/context_extention.dart';
 import 'package:tasky/core/utils/app_color.dart';
-import 'package:tasky/start_screen.dart';
+import 'package:tasky/featuers/auth/screens/start_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
